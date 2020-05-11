@@ -1,5 +1,6 @@
 <div class="container py-5">
     <h1 class="text-center font-weight-bolder display-5">Create New Account</h1>
+    <%= render 'shared/errors', obj: @user%>
     <%= simple_form_for @user do |f| %>
     <%= f.input :name, label: 'Your Full name please', error: 'Fullname is mandatory, please specify one' %>
     <%= f.input :username, label: 'Your username please', error: 'Username is mandatory, please specify one' %>
