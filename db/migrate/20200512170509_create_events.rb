@@ -1,10 +1,11 @@
-class CreatePartiesTable < ActiveRecord::Migration[5.2]
+class CreateEvents < ActiveRecord::Migration[5.2]
   def change
-    create_table :parties_tables do |t|
+    create_table :events do |t|
       t.string :title
       t.text :description
       t.date :date
       t.string :location
+      t.timestamps
     end
   end
 end
