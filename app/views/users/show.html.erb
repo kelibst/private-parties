@@ -1,7 +1,12 @@
+<div class="row">
 <h1 class="text-center p-5">Welcome to <%= @user.username%>'s page.</h1>
 
-<div class="row">
+
+    <h4 class="text-center"><%= @user.username%>'s Events</h4>
+
+    <%= render 'events/event', obj: @user.events %>
+
 </div>
-<h4 class="text-center"><%= @user.username%>'</h4>
+
 
 
